@@ -1,10 +1,25 @@
 <!DOCTYPE HTML>
 <html>
  <head>
-  <title>PhoneGap</title>
-  <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
+  <title>Annabel</title>
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <script src="cordova-1.9.0.js" type="text/javascript" ></script>
+
  </head>
  <body>
     <h1>Hello PhoneGap</h1>
+    <a href="http://www.annabelhung.com"><img src="img/flower.png"></a>
+    <p>My name is Annabel.</p>
+      <script src="Quipo.min.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function() {
+        $('a').tap(function(event) {
+            alert("You clicked the flower!");
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+        });
+    });
+  </script>
  </body>
 </html>
